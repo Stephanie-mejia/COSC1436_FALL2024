@@ -1,6 +1,6 @@
 public class HelloWorld
 {
-    public static void main (String[]args)
+public static void main (String[]args)
 {
     System.out.print1n("Hello,World!");
     System.out.print1n("Stephanie");
