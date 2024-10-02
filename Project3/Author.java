@@ -1,10 +1,11 @@
 public class Author 
 {
+    //attributes 
     private String name;
     private String email;
     private String nationality;
 
-    public Author(String AuthorName ,String AuthorEmail ,String AuthorNationality);
+    public Author(String AuthorName, String AuthorEmail, String AuthorNationality)
     {
         name = AuthorName;
         email = AuthorEmail;
@@ -12,8 +13,10 @@ public class Author
     }
     public String toString()
     {
+        //constructor
         return "Author:" + name + ", Email:" + email + ", Nationality:" + nationality ;
     }
+    //*this is a getter for the author's name,email and nationality
     public String getName()
     {
         return name;
@@ -24,6 +27,6 @@ public class Author
     }
     public String getNationality()
     {
-        return nationality
+        return nationality;
     }
 }

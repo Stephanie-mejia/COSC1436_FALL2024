@@ -1,19 +1,23 @@
 public class Book
 {
+    //attributes
     private String title;
     private String price;
-    private String Author;
+    private Author author;
 
-    public Book (String BookTitle, String BookPrice, String AuthorObject);
+    public Book (String BookTitle, String BookPrice, Author AuthorObject)
     {
         title = BookTitle;
         price = BookPrice;
-        Author = AuthorObject;
+        author = AuthorObject;
     }
+
     public String toString()
     {
-        return "Book:" + title + ", Price:" + price + "Author:" + author;
+        //constructor
+        return "Book:" + title + ", Price:" + price;
     }
+    // this is a getter for the title and price of book
     public String getTitle()
     {
         return title;
