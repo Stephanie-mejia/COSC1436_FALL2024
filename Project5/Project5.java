@@ -1,3 +1,4 @@
+//insert scanner
 import java.util.Scanner;
 
 public class Project5
@@ -9,6 +10,7 @@ public class Project5
         boolean continueCalculator = true;
         while(continueCalculator)
         {
+            //prompt user input for calculation 
             System.out.println("Welcome to the Java Calculator");
             System.out.println("Enter an operation(+,-,/,*, or exit");
             String operation = kb.next();
@@ -20,7 +22,7 @@ public class Project5
                 break;
             }
             
-            
+            //get user to imput for numbers
             System.out.println("Enter the first number:");
             double number1 = kb.nextDouble();
             System.out.println("Enter the second number:"); 
@@ -29,6 +31,7 @@ public class Project5
             boolean validOperation = true;
             switch(operation)
             {
+                //Perform calculation and insert breaks
                 case "+":
                 result = number1 + number2;
                 break;
@@ -39,6 +42,7 @@ public class Project5
                 result = number1 * number2;
                 break;
                 case "/":
+                    //imput validation and dont allow for division by zero
                 if (number2 !=0)
                     {
                         result =number1/number2;
@@ -54,10 +58,12 @@ public class Project5
                 validOperation=false;
                 break;
             }
+            //display the results 
                 if (validOperation)
                 {
                     System.out.println("The result is " + result);
                 }
+                //loop
                 System.out.println("Would you like to perform another operation (yes/no)?");
                 String userChoice=kb.next();
                 if(!userChoice.equalsIgnoreCase("yes"))
@@ -67,6 +73,7 @@ public class Project5
                 }
 
         }
+        //close scanner
 
         kb.close();
     }   
