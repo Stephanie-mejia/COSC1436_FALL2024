@@ -8,7 +8,11 @@ public class SuperheroRoster
         Int [] powerLevels = {70, 95, 80 };
         
         //print each hero's details using a loop
-        for (int i = 0)
+        for (int i = 0; i< Hero.length; i++) 
+        {
+            System.ou.println("Name:" + heroNames[i] )
+
+        }
         
     }
 }
